@@ -18,7 +18,6 @@ public class StringHelper {
     //return num of vowels and an ArrayList of them
     public static ResultChar GetVowels(String s) {
 
-        //String[] vowels = {"A", "E", "I", "O", "U", "a", "e", "i", "o", "u"};
         String vowels = "aeiouAEIOU";
 
         int n = 0;
