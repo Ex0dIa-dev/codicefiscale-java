@@ -3,6 +3,10 @@ package helper;
 import static helper.StringHelper.*;
 import helper.StringHelper.ResultChar;
 
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import java.io.FileReader;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -44,11 +48,35 @@ public class CFMethods {
         return "error";
     }
 
-    public static void GetBirthdayGender(String birthday, String gender)  {
+    //return year code + month code + day code (birthday and gender)
+    public static String GetBirthdayGender(String birthday, String gender) {
 
+        //parsing birthday date for extract day,month and year
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate bdate = LocalDate.parse(birthday,formatter);
+        LocalDate bdate = LocalDate.parse(birthday, formatter);
 
+        //reading and parsing json file
+        JSONParser parser = new JSONParser();
+        String month_code = "";
+        try {
+            Object obj = parser.parse(new FileReader("./data/month.json"));
+            JSONObject jobj = (JSONObject) obj;
+
+            //String month_code = (String) jobj.get(bdate.getMonthValue());
+
+            month_code = (String) jobj.get(String.valueOf(bdate.getMonthValue()));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        if (gender.equalsIgnoreCase("F")) {
+            return (String.valueOf(bdate.getYear())).substring(2) + month_code + (bdate.getDayOfMonth() + 40);
+        } else if (gender.equalsIgnoreCase("M")) {
+            return (String.valueOf(bdate.getYear())).substring(2) + month_code + bdate.getDayOfMonth();
+        }
+
+        return "error";
     }
 
 }

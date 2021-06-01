@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58cd2ec2-0946-4864-9c2a-3dd5dccce582" name="Default Changelist" comment="adding json-simple.jar library">
-      <change afterPath="$PROJECT_DIR$/libs/json-simple-1.1.1.jar" afterDir="false" />
+    <list default="true" id="58cd2ec2-0946-4864-9c2a-3dd5dccce582" name="Default Changelist" comment="adding json-simple.jar as library">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codicefiscale-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codicefiscale-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/month.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/month.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CodiceFiscale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodiceFiscale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper/CFMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/CFMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../json-simple-1.1.1.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -85,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622586870214</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding json-simple.jar as library">
+      <created>1622587146771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622587146771</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +112,7 @@
     <MESSAGE value="completed GetVowels() and GetConsonats() in StringHelper" />
     <MESSAGE value="added GetSurname() and GetName() methods at CFMethods class" />
     <MESSAGE value="adding json-simple.jar library" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding json-simple.jar library" />
+    <MESSAGE value="adding json-simple.jar as library" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding json-simple.jar as library" />
   </component>
 </project>
