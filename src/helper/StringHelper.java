@@ -2,9 +2,9 @@ package helper;
 
 import java.util.ArrayList;
 
-
 public class StringHelper {
 
+    //class for returning values from GetVowels() and GetConsonants()
     public static class ResultChar {
         public int n_chars;
         public ArrayList<String> chars;
@@ -15,28 +15,44 @@ public class StringHelper {
         }
     }
 
+    //return num of vowels and an ArrayList of them
     public static ResultChar GetVowels(String s) {
 
-        String[] vowels = {"A", "E", "I", "O", "U", "a", "e", "i", "o", "u"};
+        //String[] vowels = {"A", "E", "I", "O", "U", "a", "e", "i", "o", "u"};
+        String vowels = "aeiouAEIOU";
 
         int n = 0;
-        ArrayList<String> chars = new ArrayList<String>();
+        ArrayList<String> chars = new ArrayList<>();
 
         for (int i=0;i<s.length();i++) {
-            String ch = new String(Character.toString(s.charAt(i)));
+            String ch = Character.toString(s.charAt(i));
 
-            for (String vowel : vowels) {
-                if (vowel.equals(ch)) {
-                    n++;
-                    chars.add(ch);
-                }
+            if (vowels.contains(ch)) {
+                chars.add(ch.toUpperCase());
+                n++;
             }
         }
-
-
         return new ResultChar(n,chars);
     }
 
-    //public static ResultChar GetConsonants(String s) {}
+    //return num of consonants and an ArrayList of them
+    public static ResultChar GetConsonants(String s) {
+
+        String vowels = "aeiouAEIOU";
+
+        int n = 0;
+        ArrayList<String> chars = new ArrayList<>();
+
+        for (int i=0;i<s.length();i++) {
+            String ch = Character.toString(s.charAt(i));
+
+            if (!vowels.contains(ch)) {
+                chars.add(ch.toUpperCase());
+                n++;
+            }
+        }
+        return new ResultChar(n,chars);
+
+    }
 
 }
