@@ -1,9 +1,10 @@
 package helper;
 
+import static helper.StringHelper.*;
 import helper.StringHelper.ResultChar;
 
-import static helper.StringHelper.GetConsonants;
-import static helper.StringHelper.GetVowels;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class CFMethods {
 
@@ -43,6 +44,10 @@ public class CFMethods {
         return "error";
     }
 
-    //public static void GetBirthday() {}
+    public static void GetBirthdayGender(String birthday, String gender)  {
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate bdate = LocalDate.parse(birthday,formatter);
+    }
 
 }

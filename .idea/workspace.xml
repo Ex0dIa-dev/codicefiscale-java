@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58cd2ec2-0946-4864-9c2a-3dd5dccce582" name="Default Changelist" comment="added GetSurname() and GetName() methods at CFMethods class">
+      <change afterPath="$PROJECT_DIR$/data/comuni.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/month.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codicefiscale-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codicefiscale-java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper/CFMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/CFMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/StringHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/StringHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cf-java/src/helper/StringHelper.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../json-simple-1.1.1.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
