@@ -10,6 +10,7 @@ import java.io.FileReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+// Contains all methods for generating Codice Fiscale(Italiano)
 public class CFMethods {
 
     //return the surname code composed by 3 chars like XXX
@@ -62,8 +63,6 @@ public class CFMethods {
             Object obj = parser.parse(new FileReader("./data/month.json"));
             JSONObject jobj = (JSONObject) obj;
 
-            //String month_code = (String) jobj.get(bdate.getMonthValue());
-
             month_code = (String) jobj.get(String.valueOf(bdate.getMonthValue()));
 
         } catch (Exception e) {
@@ -73,10 +72,37 @@ public class CFMethods {
         if (gender.equalsIgnoreCase("F")) {
             return (String.valueOf(bdate.getYear())).substring(2) + month_code + (bdate.getDayOfMonth() + 40);
         } else if (gender.equalsIgnoreCase("M")) {
-            return (String.valueOf(bdate.getYear())).substring(2) + month_code + bdate.getDayOfMonth();
+            if (bdate.getDayOfMonth() >= 10) {
+                return (String.valueOf(bdate.getYear())).substring(2) + month_code + bdate.getDayOfMonth();
+            } else {
+                return (String.valueOf(bdate.getYear())).substring(2) + month_code + "0" + bdate.getDayOfMonth();
+            }
         }
 
         return "error";
+    }
+
+    //return city code by parsing ./data/comuni.json
+    public static String GetCityCode(String city) {
+
+        JSONParser parser = new JSONParser();
+        String city_code = "";
+
+        try {
+
+            //parsing json file to get city code
+            Object obj = parser.parse(new FileReader("./data/comuni.json"));
+            JSONObject jobj = (JSONObject) obj;
+
+            city_code = (String) jobj.get(city.toUpperCase());
+
+        } catch (Exception e) {e.printStackTrace();}
+
+        if (!city_code.equals("")) {
+            return city_code;
+        } else {
+            return "error";
+        }
     }
 
 }
