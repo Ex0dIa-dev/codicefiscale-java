@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58cd2ec2-0946-4864-9c2a-3dd5dccce582" name="Default Changelist" comment="adding json-simple.jar as library">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_06_2021_13_50_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_06_2021_13_50__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/controlcode/controlcode.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/controlcode/even_char_value.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/controlcode/odd_char_value.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper/CFMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/CFMethods.java" afterDir="false" />
     </list>
@@ -20,8 +26,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/libs/json-simple-1.1.1.jar!/org/json/simple/JSONObject.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="1tLj2uFKu6tsGjWrWLGiFddnd7a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Toto'\Prog-Java\codicefiscale-java\data\controlcode" />
       <recent name="C:\Users\Toto'\Prog-Java\codicefiscale-java" />
     </key>
   </component>
